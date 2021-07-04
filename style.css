@@ -1,0 +1,387 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.conteiner {
+    max-width: 1140px;
+    margin: 0 auto;
+    flex-grow: 1;
+
+}
+
+/* Меню */
+
+.top {
+    min-height: 75px;
+    background: #222222;
+}
+
+.top-box {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 18px;
+}
+
+.top-box-left {
+    display: flex;
+    align-items: center;
+}
+
+.top-button-left {
+    padding-right: 41px;
+}
+
+.top-box-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center
+}
+
+.top-button-right {
+    padding-right: 33px;
+}
+
+/* Главная */
+
+.main {
+    background-color: #F1E4E6;
+    margin-bottom: 65px;
+
+}
+
+.main-block {
+    height: 764px;
+    background-image: url(img/bg_main.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 70%;
+    position: relative;
+    display: flex;
+}
+
+.main_text {
+    position: absolute;
+    height: 93px;
+    display: flex;
+    margin-left: 700px;
+    margin-top: 290px;
+}
+
+.text_header {
+    font-size: 32px;
+    font-weight: 700;
+    padding-left: 16px;
+
+}
+
+.small-text {
+    font-size: 20px;
+}
+
+.word {
+    color: #F16D7F;
+}
+
+.line {
+    background-color: #F16D7F;
+    width: 12px;
+    height: 93px;
+}
+
+/* витрина */
+.showcase {
+    margin-bottom: 95px;
+}
+
+.showcase_block_top {
+    display: flex;
+    justify-content: space-between;
+    height: 260px;
+
+}
+
+.showcase_block_bottom {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    height: 180px;
+}
+
+.showcase_text {
+    background-image: url(img/bg_showcase_women.jpg);
+    background-repeat: no-repeat;
+    width: 360px;
+    height: 260px;
+    padding-top: 103px;
+
+}
+
+.middle {
+    background-image: url(img/bg_showcase_men.jpg);
+    background-repeat: no-repeat;
+    width: 360px;
+    height: 260px;
+    padding-top: 103px;
+}
+
+.last {
+    background-image: url(img/bg_showcase_kids.jpg);
+    background-repeat: no-repeat;
+    width: 360px;
+    height: 260px;
+    padding-top: 103px;
+}
+
+.bottom {
+    background-image: url(img/bg_showcase_accesories.jpg);
+    background-repeat: no-repeat;
+    width: 1140px;
+    height: 180px;
+    padding-top: 65px;
+}
+
+.showcase_link {
+    text-decoration: none;
+}
+
+h1 {
+    color: #F16D7F;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+h2 {
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 400;
+}
+
+/* каталог */
+.catalog {
+    margin-bottom: 95px;
+}
+
+.heading_catalog {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    color: #222222;
+    padding-bottom: 6px;
+}
+
+.catalog_text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    color: #9F9F9F;
+    text-align: center;
+
+}
+
+.card_box {
+    margin-top: 48px;
+    text-align: center;
+}
+
+.card_box_top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.card_box_bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 48px;
+
+}
+
+.card {
+    width: 360px;
+    background-color: #F8F8F8;
+}
+
+.card_header {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    padding-top: 25px;
+    padding-bottom: 12px;
+    color: #000000;
+    text-align: left;
+    padding-left: 18px;
+}
+
+.card_text {
+    text-align: left;
+    padding-bottom: 18px;
+    padding-left: 18px;
+}
+
+.card_price {
+    text-align: left;
+    color: #F16D7F;
+    font-size: 16px;
+    line-height: 19px;
+    padding-bottom: 20px;
+    padding-left: 18px;
+}
+
+.card_link {
+    text-decoration: none;
+}
+
+.catalog_button {
+    text-decoration: none;
+}
+
+.button_see_all {
+    width: 211px;
+    height: 47px;
+    border: 1px solid #F26376;
+    color: #F26376;
+    font-size: 16px;
+    line-height: 50px;
+    text-align: center;
+    justify-self: center;
+    display: inline-block;
+}
+
+/* подвал  */
+.footer {
+    background-color: #222224;
+
+}
+
+.footer_top {
+    padding-top: 103px;
+    padding-bottom: 103px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.card_footer_top {
+    width: 360px;
+    text-align: center;
+
+}
+
+.heading_footer {
+    color: #FBFBFB;
+    font-size: 19.96px;
+    line-height: 24px;
+    margin-top: 28px;
+    margin-bottom: 16px;
+}
+
+.text_footer {
+    font-size: 14px;
+    line-height: 17px;
+    color: #FBFBFB;
+}
+
+.footer_middle_background {
+    background-image: url(img/bg_footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid #000;
+    height: 488px;
+}
+
+.footer-middle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left_footer_middle {
+    text-align: center;
+    width: 360px;
+    padding-top: 86px;
+}
+
+
+.left_text {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #222224;
+    padding-top: 16px;
+    font-weight: 400;
+}
+
+.form {
+    text-align: center;
+    width: 360px;
+    padding-top: 86px;
+    padding-top: 150px;
+}
+
+.header_right_footer {
+    font-size: 24px;
+    color: #222224;
+}
+
+.text_right_footer {
+    font-size: 20px;
+
+}
+
+.form {
+    width: 557px;
+}
+
+.input-text {
+    margin-top: 35px;
+    width: 256px;
+    height: 49px;
+    background-color: #E1E1E1;
+    border: 1px solid #E1E1E1;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding-left: 10px;
+}
+
+.button {
+    width: 100px;
+    height: 49px;
+    background-color: #F16D7F;
+    border: 1px solid #F16D7F;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #FFFFFF;
+
+
+
+}
+
+.footer_bottom {
+    background-color: #222224;
+    height: 79px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright {
+    color: #FBFBFB;
+    font-size: 16px;
+    line-height: 79px;
+}
+
+.society_network {
+    padding-top: 24px;
+    text-align: right;
+}
