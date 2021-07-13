@@ -183,6 +183,7 @@ body {
 
 .small-text {
   font-size: 20px;
+  margin-bottom: 0;
 }
 
 .word {
@@ -192,7 +193,7 @@ body {
 .line {
   background-color: #F16D7F;
   width: 8px;
-  height: 60px;
+  height: 71px;
 }
 
 /* витрина */
@@ -559,7 +560,7 @@ h3 {
 .input-text {
   margin-top: 35px;
   width: 256px;
-  height: 49px;
+  height: 51px;
   background-color: #E1E1E1;
   border: 1px solid #E1E1E1;
   border-top-left-radius: 10px;
