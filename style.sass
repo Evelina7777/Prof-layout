@@ -1,0 +1,388 @@
+@import "vars"
+
+*
+    margin: 0px
+    padding: 0px
+
+@import "catalog"
+@import "footer"
+@import "cart"
+
+.flex
+    display: flex
+    justify-content: center
+@mixin font-family($fs, $fw, $lh, $color)
+    font-size: $fs
+    font-weight: $fw
+    line-height: $lh
+    color: $color
+.button_main
+    @include font-family(16px,400,50px,white)
+    border: 2px solid $main_color
+    background-color: $main_color
+    text-align: center
+    justify-self: center
+    display: inline-block
+    padding-left: 41px
+    padding-right: 46px
+    transition: all 0.2s
+    &:hover
+        background-color: white
+        color: #F26376
+        border: 2px solid #F26376
+    &_radius
+        margin-top: 35px
+        height: 51px
+        border-top-right-radius: 10px
+        border-bottom-right-radius: 10px
+    &_add
+        display: flex
+        text-decoration: none
+        border: 1px solid white
+        color: white
+        padding: 10px 10px 8px 13px
+        align-items: center
+    &_add:hover
+        box-shadow: 0 0 10px #fff
+        color: white
+
+
+
+body
+    font-family: 'Lato', sans-serif
+    display: flex
+    flex-direction: column
+
+
+.conteiner-main
+    max-width: $site-width
+    margin: 0 auto
+    flex-grow: 1
+
+/* Меню */
+
+.top
+    min-height: 75px
+    background: #222222
+
+    &-box
+        display: flex
+        justify-content: space-between
+        padding-top: 18px
+
+    &-box-left
+        display: flex
+        align-items: center
+        padding-bottom: 20px
+
+    &-button-left
+        padding-right: 41px
+
+    &-box-right
+        display: flex
+        flex-direction: row
+        justify-content: flex-end
+
+
+.menu
+    display: flex
+    list-style-type: none
+    padding-left: 0px
+
+    &-link
+        padding-left: 30px
+        padding-bottom: 45px
+
+    &-list
+        position: relative
+        list-style-type: none
+
+    &-box
+        background-color: #fff
+        padding-top: 37px
+        padding-left: 34px
+        padding-bottom: 100px
+        padding-right: 100px
+
+    &-block
+        margin-top: 24px
+
+.mega-box
+    position: absolute
+    top: 59px
+    display: none
+    z-index: 1
+
+    .menu-list:hover &
+        display: flex
+
+    &::before
+        content: "x"
+        display: block
+        position: absolute
+        top: 31px
+        left: 200px
+
+.mega-heading
+    font-size: 14px
+    line-height: 55px
+    color: #F16D7F
+    text-transform: uppercase
+    width: 232px
+    text-decoration: none
+    font-weight: bolder
+
+    &:hover
+        color: black
+
+.mega-link
+    display: block
+    padding-left: 15px
+    color: #6F6E6E
+    text-decoration: none
+    line-height: 28px
+
+    &:hover
+        color: $main_color
+
+/* Баннер */
+
+.banner
+    background-color: #F1E4E6
+    margin-bottom: 65px
+
+    &-block
+        height: 764px
+        background-image: url(img/bg_main.png)
+        background-repeat: no-repeat
+        background-position: left bottom
+        background-size: 70%
+        display: flex
+
+    &_text
+        height: 93px
+        display: flex
+        position: relative
+        left: 700px
+        top: 290px
+
+.text_header
+    @include font-family(48px,900,58px,#222222)
+    padding-left: 16px
+    position: absolute
+    width: 377px
+
+.small-text
+    font-size: 30px
+    margin-bottom: 0
+
+.word
+    color: $main_color
+
+.line
+    background-color: $main_color
+    width: 8px
+    height: 100px
+
+/* витрина */
+.showcase
+    margin-bottom: 95px
+
+    &_block_top
+        display: flex
+        justify-content: space-between
+        height: 260px
+
+
+    &_block_bottom
+        margin-top: 30px
+        display: flex
+        justify-content: space-between
+        height: 180px
+
+    &_text
+        background-image: url(img/bg_showcase_women.jpg)
+        background-repeat: no-repeat
+        width: 360px
+        height: 260px
+        padding-top: 103px
+        display: block
+        transition: all 0.3s
+    &_text:hover
+        transform: scale(1.1)
+
+
+.middle
+    background-image: url(img/bg_showcase_men.jpg)
+    background-repeat: no-repeat
+    width: 360px
+    height: 260px
+    padding-top: 103px
+
+.last
+    background-image: url(img/bg_showcase_kids.jpg)
+    background-repeat: no-repeat
+    width: 360px
+    height: 260px
+    padding-top: 103px
+
+.bottom
+    background-image: url(img/bg_showcase_accesories.jpg)
+    background-repeat: no-repeat
+    width: $site-width
+    height: 180px
+    padding-top: 65px
+
+.showcase_link
+    text-decoration: none
+    padding-right: 30px
+    display: block
+
+
+    &:hover h1
+        color: white
+
+
+
+h1
+    color: $main_color
+    text-transform: uppercase
+    text-align: center
+
+h2
+    @include font-family(16px,400,19px,#FFFFFF)
+    text-align: center
+
+
+h3
+    @include font-family(14px,400,17px,#000000)
+    text-transform: uppercase
+
+/* Карточка товара */
+.product
+    background-color:  #F7F7F7
+    border-bottom: 1px solid #EAEAEA
+
+.product-top
+    height: 777px
+    text-align: center
+
+
+.product-line-main
+    background-color: white
+    width: 1141px
+    height: 58px
+    border-left: 1px solid #EAEAEA
+    border-right: 1px solid #EAEAEA
+    border-top: 1px solid #EAEAEA
+    border-bottom: white
+
+.product-desc
+    width: 1141px
+    background-color: white
+    text-align: center
+    @extend .flex
+    flex-direction: column
+    border: 1px solid #EAEAEA
+    border-top: white
+    margin-bottom: 128px
+
+
+.product-text1
+    color: $main_color
+    text-transform: uppercase
+    margin-bottom: 12px
+
+.product-line-pink
+    background-color: $main-color
+    width: 63px
+    height: 3px
+    margin-bottom: 12px
+    align-self: center
+
+.product-text2
+    text-transform: uppercase
+    font-size: 18px
+    color: #4D4D4D
+    margin-bottom: 48px
+
+.product-text3
+    @include font-family(14px,300,17px,#5E5E5E)
+    text-align: center
+    width: 555px
+    align-self: center
+    margin-bottom: 32px
+
+.product-price
+    color: $main-color
+    width: 641px
+    border-bottom: 1px solid #EAEAEA
+    align-self: center
+    padding-bottom: 65px
+    margin-bottom: 65px
+
+.filter_block_product
+    @extend .flex
+
+.product-filter
+    margin-bottom: 48px
+
+.nav_product_box
+    @extend .flex
+    margin-bottom: 64px
+
+        /*Registration*/
+.reg
+    margin-top: 65px
+    &_box
+        @extend .flex
+    &_left
+        width: 360px
+
+    &_heading
+        @include font-family(16px,400,19px,#222222)
+    .reg_checkbox
+        font-weight: 300
+        font-size: 11px
+        margin-top: 33px
+        margin-bottom: 35px
+        margin-right: 20px
+        vertical-align: middle
+
+    .reg_text
+            margin-top: 15px
+    .reg_right_heading
+        @include font-family(24px,400,29px,#000000)
+        margin-bottom: 22px
+        margin-left: 128px
+
+    .reg_right_text
+        @include font-family(24px,400,29px,#000000)
+        width: 652px
+        margin-bottom: 21px
+        margin-left: 128px
+
+.fa-check
+    margin-right: 10px
+    margin-left: 128px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

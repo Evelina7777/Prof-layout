@@ -1,0 +1,298 @@
+/* каталог */
+@mixin font-family($fs, $fw, $lh, $color)
+  font-size: $fs
+  font-weight: $fw
+  line-height: $lh
+  color: $color
+
+.item-sec
+  margin-bottom: 48px
+
+.item_heading_catalog
+  @include font-family(30px,400,36px,#222222)
+  letter-spacing: 0em
+  padding-bottom: 6px
+  text-transform: uppercase
+  text-align: center
+
+.item_catalog_text
+  @include font-family(14px,400,17px,#9f9f9f)
+  letter-spacing: 0em
+  text-align: center
+  margin-bottom: 43px
+
+.item-box
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  width: 1160px
+
+.item
+  width: 360px
+  background-color: #F8F8F8
+  position: relative
+  margin-bottom: 30px
+  margin-right: 15px
+
+
+  &-link
+    width: 360px
+    display: block
+    text-decoration: none
+
+  &-pic
+    width: 100%
+
+  &:hover .item-pic
+    filter: brightness(50%)
+
+  &-txt
+    padding-left: 18px
+    padding-bottom: 20px
+    padding-right: 28px
+    padding: 25px
+
+  &-heading
+    @include font-family(13px,400,16px,black)
+    text-transform: uppercase
+    margin-bottom: 12px
+
+  &-desc
+    @include font-family(14px,400,17px,#5D5D5D)
+    margin-bottom: 15px
+
+  &-price
+    font-size: 16px
+    line-height: 19px
+    color: $main_color
+    font-weight: 400
+
+.add-box
+  display: none
+  justify-content: center
+  width: 100%
+  position: absolute
+  top: 188px
+
+  .item:hover &
+    display: flex
+
+//.add
+//  display: flex
+//  text-decoration: none
+//  border: 1px solid white
+//  color: white
+//  padding: 10px 10px 8px 13px
+//  align-items: center
+
+.fa-shopping-cart
+  margin-right: 3px
+
+.add:hover
+  box-shadow: 0 0 10px #fff
+  color: white
+
+.add_cart
+  margin-right: 11px
+
+.catalog_button
+  text-decoration: none
+
+.nav_catalog
+  margin-bottom: 95px
+
+  &_box
+    display: flex
+    justify-content: center
+
+.page-link:hover
+  color: violet
+
+//.button_main
+//  @include font-family(16px,400,50px,white)
+//  border: 2px solid #F26376
+//  background-color: #F26376
+//  text-align: center
+//  justify-self: center
+//  display: inline-block
+//  padding-left: 41px
+//  padding-right: 46px
+//
+//  &:hover
+//    background-color: white
+//    color: #F26376
+
+
+/* Страница каталога */
+.cat_page
+  height: 148px
+  background-color: $site-color
+  display: flex
+  align-items: center
+
+  &_head
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+  &_heading
+    @include font-family(24px,400,29px,black)
+    text-align: left
+    color: $main_color
+
+  &_link_block
+    display: flex
+    justify-content: flex-end
+
+  &_link
+    @include font-family(14px,400,17px,#636363)
+    text-decoration: none
+    text-transform: uppercase
+
+  &_link:hover
+    color: $main_color
+
+  &_txt
+    @include font-family(14px,400,17px,$main_color)
+    text-transform: uppercase
+    display: block
+
+.filter
+  height: 137px
+  display: flex
+  align-items: center
+
+  &_block
+    display: flex
+
+  &_block01
+    width: 382px
+
+  &_block02
+    padding-right: 28px
+
+  &_menu
+    display: flex
+    padding-left: 13px
+
+  &_txt
+    @include font-family(14px,600,17px,black)
+    text-transform: uppercase
+    padding-right: 10px
+/* padding-left: 18px; */
+
+.fa-sort-amount-down
+  color: black
+
+.pink
+  color: $main_color
+
+.block02_txt
+  font-weight: 400
+
+.filter_menu-link
+  text-decoration: none
+
+.fa-chevron-down
+  color: black
+
+.filter_menu_list_block02
+  position: relative
+
+  &:hover .block02-box
+    display: flex
+
+.filter_mega-box
+  display: none
+  z-index: 1
+  position: absolute
+  top: 255px
+  padding-top: 13px
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.16)
+
+.filter-menu-box
+  background-color: #fff
+  padding-bottom: 16px
+  width: 360px
+
+  &-block2 .pink
+    color: $main_color
+
+.filter_menu_list:hover .filter_mega-box
+  display: flex
+  color: $main_color
+
+.filter_menu_list:hover .fa-sort-amount-down
+  color: $main_color
+
+.menu-block_filter
+  padding-left: 17px
+  padding-top: 16px
+
+.filter-heading
+  display: flex
+  align-items: center
+
+.line_filter-heading
+  width: 5px
+  height: 37px
+  background-color: $main_color
+.filter-link
+  height: 53px
+  width: 320px
+  padding-left: 10px
+  border-bottom: 1px solid #EBEBEB
+  color: #6F6E6E
+  line-height: 100px
+
+  summary &:hover
+    color: $main_color
+
+summary
+  display: block
+
+summary::-webkit-details-marker
+  display: none
+
+.block02-box
+  background-color: #FFFFFF
+  z-index: 1
+  display: none
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.16)
+  position: absolute
+  left: 11px
+
+.filter-form
+  @include font-family(14px,400,16px,#6f6e6e)
+  text-align: left
+  text-transform: uppercase
+  padding-top: 9px
+  padding-left: 9px
+  padding-bottom: 12px
+  font-family: Roboto
+
+   width: 100%
+  //min-width: 120px
+
+  &-fieldset
+    display: flex
+    flex-direction: column
+    border: 0 none
+
+  &-label
+    padding-right: 10px
+.page-link
+  color: #EBEBEB
+  border: none
+
+.pagination
+  border: 1px solid #EBEBEB
+  background-color: white
+  border-radius: 3px
+.fa-chevron-left,
+.fa-chevron-right
+      color: black
+
+.fa-chevron-left:hover,
+.fa-chevron-right:hover
+  color: $main-color
