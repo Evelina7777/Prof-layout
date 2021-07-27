@@ -1,0 +1,103 @@
+/*Корзина*/
+@mixin font-family($fs, $fw, $lh, $color)
+  font-size: $fs
+  font-weight: $fw
+  line-height: $lh
+  color: $color
+
+.cart
+  margin-top: 96px
+  @extend .flex
+  margin-bottom: 128px
+
+  &_box
+    @extend .flex
+
+  &_item
+    width: 568px
+  &_item_link
+    @extend .flex
+    text-decoration: none
+    margin-bottom: 40px
+  &_item_link:hover
+    box-shadow:  0 10px 40px #E5E5E5
+  &_item-pic
+    width: 262px
+  &_item-desc
+    @include font-family(22px,400,26px,#575757)
+    padding-top: 22px
+    padding-left: 32px
+    width: 390px
+    position: relative
+
+  &_item-desc::before
+    @include font-family(30px,400,30px,#6f6e6e)
+    content: "x"
+    display: block
+    position: absolute
+    top: 20px
+    left: 280px
+  &_quantity
+    border: 1px solid #A4A4A4
+    width: 100%
+    padding-left: 15px
+    padding-right: 18px
+
+  &_right
+    @include font-family(16px,400,19px,#222222)
+    padding-top: 12px
+    padding-left: 140px
+  &_input-text
+    @include font-family(16px,400,19px,#222222)
+    border: 1px solid  #A4A4A4
+    width: 360px
+    height: 45px
+    background-color: white
+    margin-top: 20px
+    padding-left: 17px
+    border-radius: 0
+  &_form
+    margin-bottom: 69px
+  &_right_bottom
+    background-color: #F5F3F3
+    width: 360px
+    min-height: 214px
+    padding: 39px 34px 42px 44px
+  &_text_small
+    font-size: 11px
+    line-height: 13px
+    text-align: right
+  &_text_big
+    @include font-family(16px,400,19px,#222222)
+    text-align: right
+  &_text_big_price
+    color: $main-color
+    font-weight: 600
+.cart_button_box
+  margin-top: 32px
+  display: flex
+  justify-content: space-between
+
+  &__button_main
+    border: 1px solid #A4A4A4
+    padding: 16px 40px
+    text-decoration: none
+    color: #A4A4A4
+    margin-top: 20px
+
+  &__button_main:hover
+    color: $main-color
+    border: 1px solid  $main-color
+
+  span.card_item-price
+    color: $main-color
+
+  p.card_item-txt
+    margin-bottom: 6px
+  h3.card_item-heading
+    @include font-family(24px,400,29px,#222222)
+    text-transform: uppercase
+    margin-bottom: 42px
+  .nav_cart_box
+    border-top: 1px solid #E2E2E2
+    padding-top: 17px

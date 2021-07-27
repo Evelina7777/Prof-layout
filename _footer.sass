@@ -1,0 +1,118 @@
+/* подвал  */
+@mixin font-family($fs, $fw, $lh, $color)
+  font-size: $fs
+  font-weight: $fw
+  line-height: $lh
+  color: $color
+.footer
+  background-color: #222224
+  /*Сделать затемнение*/
+  //background-color: darken($main_color,25%)
+  /*Сделать осветлен*/
+  //background-color: lighten($main_color,25%)
+
+  &_top
+    padding-top: 103px
+    padding-bottom: 103px
+    display: flex
+    justify-content: space-between
+
+.card_footer_top
+  width: 360px
+  text-align: center
+
+.heading_footer
+  @include font-family(20px,400,24px,#FBFBFB)
+  margin-top: 28px
+  margin-bottom: 16px
+
+.text_footer
+  @include font-family(14px,400,17px,#FBFBFB)
+
+.footer_middle_background
+  background-image: url(img/bg_footer.jpg)
+  background-repeat: no-repeat
+  background-size: cover
+  height: 488px
+
+.footer-middle
+  display: flex
+  justify-content: space-between
+
+.left_footer_middle
+  text-align: center
+  width: 360px
+  padding-top: 86px
+
+.left_text
+  @include font-family(20px,400,24px,#222224)
+  text-align: center
+  padding-top: 16px
+.form_section
+  text-align: center
+  width: 360px
+  padding-top: 86px
+  padding-top: 150px
+
+.form
+  @extend .flex
+  &_section
+    width: 557px
+
+.header_right_footer
+  font-size: 24px
+  color: #222224
+
+.text_right_footer
+  font-size: 20px
+
+
+.input-text
+  margin-top: 35px
+  width: 256px
+  height: 51px
+  background-color: #E1E1E1
+  border: 1px solid #E1E1E1
+  border-top-left-radius: 10px
+  border-bottom-left-radius: 10px
+  padding-left: 10px
+  outline: none
+
+
+
+
+
+.footer_bottom-main
+  background-color: #222224
+  height: 79px
+  display: flex
+  justify-content: space-between
+
+.copyright
+  color: #FBFBFB
+  font-size: 16px
+  line-height: 79px
+
+.society_network
+  text-align: right
+
+.fa-facebook-f,
+.fa-instagram,
+.fa-pinterest-p,
+.fa-twitter
+  width: 35px
+  height: 35px
+  size: 8px
+  color: black
+  background-color: white
+  text-align: center
+  padding-top: 10px
+  margin-top: 24px
+  margin-left: 7px
+
+.fa-facebook-f:hover,
+.fa-instagram:hover,
+.fa-pinterest-p:hover,
+.fa-twitter:hover
+  color: white
+  background-color: $main-color
